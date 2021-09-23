@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0
+}
+ $background:linear-gradient(to right, rgba(66, 21, 139, 0.8), rgba(25,22,175,0.9) );
+ $textcolor-pr: white;
+ $textcolor-sec: blue;
+ 
+body{
+    font-family: sans-serif, Georgia, 'Times New Roman', serif;
+   background-image: $background;
+   color: $textcolor-pr;
+   position: relative;
+    height: 100vh;
+
+}
+ @mixin flexcontainer ($direction, $al, $jc){
+     display: flex;
+     flex-direction: column;
+     align-items: $al;
+     justify-content: $jc;
+    
+ }
+ @mixin card{ 
+     height: 180px;
+    width: 300px;
+    background-color: white;
+    color: $textcolor-sec;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px rgba(0,0,0, 0.5);
+
+ }
+ 

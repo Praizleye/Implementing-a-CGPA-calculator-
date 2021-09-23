@@ -1,0 +1,363 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif, Georgia, 'Times New Roman', serif;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(66, 21, 139, 0.8)), to(rgba(25, 22, 175, 0.9)));
+  background-image: linear-gradient(to right, rgba(66, 21, 139, 0.8), rgba(25, 22, 175, 0.9));
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+
+.hide {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.hide1 {
+  -webkit-animation-name: windowsload;
+          animation-name: windowsload;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  position: relative;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes windowsload {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes windowsload {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.hide2 {
+  -webkit-animation-name: frame2;
+          animation-name: frame2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  position: relative;
+  -webkit-animation-fill-mode: reset;
+          animation-fill-mode: reset;
+}
+
+@-webkit-keyframes frame2 {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes frame2 {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.hide3 {
+  -webkit-animation-name: frame3;
+          animation-name: frame3;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  position: relative;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes frame3 {
+  0% {
+    left: 1000%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes frame3 {
+  0% {
+    left: 1000%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.hide4 {
+  -webkit-animation-name: frame4;
+          animation-name: frame4;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+  position: relative;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes frame4 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes frame4 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+main .legend {
+  text-decoration: underline;
+  font-weight: 1000;
+  padding-bottom: 30px;
+}
+
+main .content {
+  padding-bottom: 20px;
+}
+
+main input[type="number"] {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+main input[type="radio"] {
+  cursor: pointer;
+}
+
+main input[type="radio"]:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+main ul li {
+  list-style: none;
+}
+
+main .prisubmit2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .prisubmit2 svg {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+header {
+  margin: 30px auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .introcontainer {
+  height: 180px;
+  width: 300px;
+  background-color: white;
+  color: blue;
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+  background-color: blueviolet;
+  margin: 40px auto;
+  padding: 10px 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+header .introcontainer .yourIntro {
+  margin-bottom: 20px;
+  color: white;
+}
+
+header .introcontainer .form-enter {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+header .introcontainer input {
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color: blueviolet;
+  padding-top: 0.5rem;
+  color: aliceblue;
+}
+
+header .introcontainer label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  pointer-events: none;
+  color: white;
+}
+
+header .introcontainer label:after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid aliceblue;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header .introcontainer label .name-anime {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0.8rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header .introcontainer .prisubmit {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+}
+
+.inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+input:focus + label .name-anime,
+input:valid + label .name-anime {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #faffff;
+  font-size: xx-small;
+}
+
+input:focus + label::after,
+input:valid + label::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  color: teal;
+}
+/*# sourceMappingURL=main.css.map */

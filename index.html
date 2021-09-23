@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <title>Simple Cgpa Calculator</title>
+</head>
+<body>
+    <header class="active">
+        <h1 class="heading" >
+            <div class="hide hide1"> Hi!!! i am Screamer,</div>
+            <div class="hide hide2"> an interactive Bot</div>
+            <div class="hide hide3">CGPA Calculator </div>
+            </h1>
+       <form class="introcontainer card hide4">
+           <h2 class="yourIntro "> Can i catch your Name?</h2>
+          <div class="form-enter">
+           <input type="text" name="name" class="yourname" autocomplete="off" required>
+            <label for="yourname">
+               <span class="name-anime">Name</span>  </label>
+      
+     </div> 
+     <div class="prisubmit" type= "submit"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-right" class="svg-inline--fa fa-arrow-circle-right fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg></div>
+     </form>
+
+    </header>
+
+
+    <main id="showcase" class="inactive">
+        <form>
+          <div class="fieldset">
+           <h2 class="legend">Hi, <span class="getdatname"></span> Just a few details</h2>
+        <div class="content content1">
+            
+            <div class="container1 ">What's your grading point scale?</div>
+           <input type="radio" name="gradeScale" class="radio1" value="fivePt" checked required>
+           <label for="radio1">5 point</label>
+           <input type="radio" name="gradeScale" class="radiol2" value="fourPt" required>
+           <label for="radio2">4 point</label>
+        </div>
+
+         <div class="content content2">
+        <div class="container2">How many courses did you offer?</div>
+ <input type="number" name="numCourse" class="numCourse" value="1" min="1" max="20" required>
+</div>
+<div class="content content3">
+<div class="container3">Is your highhest Credit Load greater than 6 units ?</div>
+     <input type="radio" name="maxcredit" class="credit" id="option1" value="no" checked required>
+     <label class="no">NO</label>  
+     <input type="radio" name="maxcredit" class="credit" id="option2" value="yes" required>  
+     <label class="yes">YES</label>  
+ </div>
+ <div class="prisubmit2" type= "submit"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-right" class="svg-inline--fa fa-arrow-circle-right fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path></svg></div>
+    </form>
+
+<div class="inactive">
+    <ul class="content content4">
+        <li>
+    <div class="container4"> 
+       How many 6 unit courses was offered?
+    </div>
+           <input type="number" name="CreditLoad" class="maxLoad" value="1">
+      </li>
+    </ul>
+</div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
