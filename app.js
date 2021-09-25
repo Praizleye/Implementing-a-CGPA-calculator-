@@ -22,15 +22,30 @@ const nextframe= click2next.addEventListener("click", (e)=>{
      getcontent.classList.remove("inactive"); // remove the class of inactive on next frame
      getcontent.classList.add("active"); //add the class of active on it
   
-     getdatname.textContent = getname.value;
+     getdatname.textContent = getname.value; //this just appends your name to the next frame
 
    click2next2.addEventListener ("click", ()=> {
        console.log("i have tire i swr")
    }) // the button takes us to next frame and tells us the cheked input of the previous frame.
 
-   const info = console.log (highestcreditload[0].checked);
+  // const info = console.log (highestcreditload[0].checked);//need to catch the radio button if a user has a credit load greater than 6
+
 for (let i=0; i<highestcreditload.length; i++){
-    console.log (highestcreditload[i].checked);
+
+   
+     highestcreditload[i].addEventListener("click", () => {
+        if (highestcreditload[0].checked === true ){
+console.log("whoops what a relieve");
+    }
+    else if (highestcreditload[i].checked === true){
+        console.log("now the stress is real");
+    }
+    else{
+        console.log("you have not made a valid selection");
+    }  
+     })
+
+   
 }
 
     };
